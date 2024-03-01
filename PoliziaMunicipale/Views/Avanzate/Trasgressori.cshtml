@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PoliziaMunicipale.Models.Trasgressori>
+
+@{
+    ViewBag.Title = "Trasgressori";
+}
+
+<div class="container">
+    <h2>Trasgressori</h2>
+
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cognome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.trasgressori)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.totale)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cognome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.trasgressori)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.totale)
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
