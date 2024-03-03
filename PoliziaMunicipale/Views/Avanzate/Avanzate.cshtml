@@ -3,7 +3,7 @@
     ViewBag.Title = "Avanzate";
 }
 
-<h1 class="mb-3">Informazioni Avanzate</h1>
+<h1 class="mb-5 mt-3">Informazioni Avanzate</h1>
 <div class="card">
     <div class="card-header">
         Riepilogo informazioni Avanzate
@@ -11,10 +11,11 @@
     <div class="card-body">
         <h5 class="card-title">Scegli quale sezione vedere</h5>
         <p class="card-text"></p>
-        @Html.ActionLink("Verbali per Trasgressore", "Trasgressori", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary" })
-        @Html.ActionLink("Punti Dec. per Trasgressore", "Punti", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary" })
-        @Html.ActionLink("Infrazini +10 Punti Dec.", "Piudieci", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary" })
-        @Html.ActionLink("Violazion +400€", "Quattrocento", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary" })
+        @Html.ActionLink("Verbali per Trasgressore", "Trasgressori", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary me-3" })
+        @Html.ActionLink("Punti Dec. per Trasgressore", "Punti", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary me-3" })
+        @Html.ActionLink("Infrazioni +10 Punti Dec.", "Piudieci", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary me-3" })
+        @Html.ActionLink("Violazioni +400€", "Quattrocento", "Avanzate", new { area = "" }, new { @class = "btn btn-outline-secondary" })
+       
     </div>
 </div>
 

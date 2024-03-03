@@ -184,15 +184,15 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Violazioni\Violazioni.cshtml" />
-    <Content Include="Views\Verbale\Verbale.cshtml" />
     <Content Include="Views\Avanzate\Avanzate.cshtml" />
     <Content Include="Views\Anagrafica\Anagrafica.cshtml" />
     <Content Include="Views\Avanzate\Trasgressori.cshtml" />
     <Content Include="Views\Avanzate\Punti.cshtml" />
     <Content Include="Views\Avanzate\Piudieci.cshtml" />
     <Content Include="Views\Avanzate\Quattrocento.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Verbale\Verbale.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

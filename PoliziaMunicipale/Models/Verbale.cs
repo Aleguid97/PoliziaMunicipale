@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace PoliziaMunicipale.Models
 {
@@ -18,7 +15,6 @@ namespace PoliziaMunicipale.Models
         public int IDanagrafica { get; set; }
         public string Cognome { get; set; }
         public string Nome { get; set; }
-
         public string Descrizione_Verbale { get; set; }
 
     }

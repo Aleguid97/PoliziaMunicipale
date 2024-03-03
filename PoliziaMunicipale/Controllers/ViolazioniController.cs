@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace PoliziaMunicipale.Controllers
@@ -16,7 +14,7 @@ namespace PoliziaMunicipale.Controllers
         {
             return View();
         }
-        public ActionResult Violazioni ()
+        public ActionResult Violazioni()
         {
             List<Violazioni> violazione = new List<Violazioni>();
             string connectionString = ConfigurationManager.ConnectionStrings["Polizia"].ConnectionString;
@@ -50,4 +48,4 @@ namespace PoliziaMunicipale.Controllers
             }
         }
     }
- }
+}
