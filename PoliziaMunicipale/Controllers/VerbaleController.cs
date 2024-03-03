@@ -100,8 +100,13 @@ namespace PoliziaMunicipale.Controllers
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
-                        {
-                            IDviolazioni.Add(reader.GetInt32(0).ToString());
+                        { 
+                            //Così se ci sono ID duplicati non vengono aggiunti
+                            string id = reader.GetInt32(0).ToString();
+                            if (!IDviolazioni.Contains(id))
+                            {
+                                IDviolazioni.Add(id);
+                            }
                         }
                     }
                 }
